@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!--<body style="background-image: url('{{ url_for('static', filename='background.jpg') }}'); background-size: cover;background-repeat: no-repeat;">-->
+    <div class="background-image"></div>
+  <div class="container2">
+        <h1>Signup</h1>
+        <form action="/signup" method="POST">
+            <input class="in" type="text" name="username" placeholder="Username" required><br><br>
+            <input class="in" type="password" name="password" placeholder="Password" required><br><br>
+        <select name="role"class="select" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="Voter">Voter</option>
+                <option value="Admin">Admin</option>
+        </select><br><br>
+            <input class="btn1" type="submit" value="Signup">
+        </form>
+    </div>
+    
+</body>
+</html>
